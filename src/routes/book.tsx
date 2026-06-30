@@ -16,7 +16,7 @@ export const Route = createFileRoute("/book")({
 });
 
 function Book() {
-  const [form, setForm] = useState({ name: "", horse: "", yard: "", preferred: "", notes: "" });
+  const [form, setForm] = useState({ name: "", horse: "", age: "", yard: "", notes: "" });
   const [sent, setSent] = useState(false);
 
   function handleSubmit(e: React.FormEvent) {
@@ -26,8 +26,8 @@ function Book() {
       ``,
       `Name: ${form.name}`,
       `Horse: ${form.horse}`,
+      `Age: ${form.age}`,
       `Yard / postcode: ${form.yard}`,
-      form.preferred ? `Preferred dates/times: ${form.preferred}` : null,
       form.notes ? `Notes: ${form.notes}` : null,
     ].filter(Boolean).join("\n");
     window.open(whatsappUrl(msg), "_blank");
@@ -54,8 +54,9 @@ function Book() {
             <form onSubmit={handleSubmit} className="space-y-3">
               <Field label="Your name" value={form.name} onChange={(v) => setForm({ ...form, name: v })} required />
               <Field label="Horse's name" value={form.horse} onChange={(v) => setForm({ ...form, horse: v })} required />
+              <Field label="Horse's age" value={form.age} onChange={(v) => setForm({ ...form, age: v })} required />
               <Field label="Yard / postcode" value={form.yard} onChange={(v) => setForm({ ...form, yard: v })} required />
-              
+
               <div>
                 <label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">Notes (optional)</label>
                 <textarea
@@ -85,7 +86,7 @@ function Book() {
               <p className="mt-2 max-w-xs text-sm text-muted-foreground">
                 WhatsApp should be open with your appointment details. Sophie will confirm shortly.
               </p>
-              <button onClick={() => { setSent(false); setForm({ name: "", horse: "", yard: "", preferred: "", notes: "" }); }} className="mt-6 text-sm text-primary underline underline-offset-4 hover:text-accent">
+              <button onClick={() => { setSent(false); setForm({ name: "", horse: "", age: "", yard: "", notes: "" }); }} className="mt-6 text-sm text-primary underline underline-offset-4 hover:text-accent">
                 Send another request
               </button>
             </div>

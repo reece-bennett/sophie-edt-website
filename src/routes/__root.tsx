@@ -47,10 +47,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Sophie Bennett Equine Dentistry — Forest of Dean" },
-      { name: "description", content: "Fully qualified BAEDT & BEVA/BVDA equine dentist. Calm, sympathetic dental care for horses and ponies across the Forest of Dean and surrounding counties." },
+      { title: "Sophie Bennett Equine Dentistry" },
+      { name: "description", content: "Equine dentist based in Hartpury, Gloucester. Fully qualified with the BEVA/BVDA and BAEDT." },
       { property: "og:title", content: "Sophie Bennett Equine Dentistry" },
-      { property: "og:description", content: "Calm, qualified equine dental care across the Forest of Dean." },
+      { property: "og:description", content: "Equine dentist based in Hartpury, Gloucester. Fully qualified with the BEVA/BVDA and BAEDT." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

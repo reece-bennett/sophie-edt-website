@@ -1,12 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Check } from "lucide-react";
-import sophieHorse from "@/assets/sophie-horse.png.asset.json";
+import sophieHorse from "@/assets/sophie-with-horse.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About Sophie — Sophie Bennett Equine Dentistry" },
-      { name: "description", content: "Meet Sophie Bennett — BAEDT and BEVA/BVDA qualified equine dentist working across the Forest of Dean." },
+      { name: "description", content: "Meet Sophie Bennett — BAEDT and BEVA/BVDA qualified equine dentist working across Gloucestershire." },
       { property: "og:title", content: "About Sophie Bennett" },
       { property: "og:description", content: "BAEDT & BEVA/BVDA qualified equine dentist. Calm, sympathetic approach." },
     ],
@@ -24,14 +24,14 @@ function About() {
             Meet Sophie.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-            A fully qualified and registered equine dentist with a calm, considered approach — bringing modern dental care to horses and ponies across the Forest of Dean and surrounding counties.
+            A fully qualified and registered equine dentist with a calm, considered approach — bringing modern dental care to horses and ponies across Gloucestershire and surrounding counties.
           </p>
         </div>
       </section>
 
       <section className="mx-auto max-w-5xl px-6 pt-16">
         <img
-          src={sophieHorse.url}
+          src={sophieHorse}
           alt="Sophie Bennett with a horse outside a stone manor house"
           className="w-full rounded-md object-cover"
           loading="lazy"
@@ -60,7 +60,7 @@ function About() {
                 "BAEDT — British Association of Equine Dental Technicians",
                 "BEVA/BVDA qualified examination",
                 "Fully insured for private practice",
-                "Based Forest of Dean — covering all surrounding counties",
+                "Gloucestershire based — covering all surrounding counties",
               ].map((c) => (
                 <li key={c} className="flex items-start gap-3"><Check size={18} className="mt-0.5 text-accent" />{c}</li>
               ))}

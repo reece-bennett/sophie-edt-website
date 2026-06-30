@@ -16,7 +16,7 @@ export function SiteFooter() {
             </div>
           </div>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-primary-foreground/75">
-            Calm, sympathetic dental care for horses and ponies. Fully qualified, fully insured, covering the Forest of Dean and all surrounding counties.
+            Calm, sympathetic dental care for horses and ponies. Fully qualified, fully insured, covering Gloucestershire and all surrounding counties.
           </p>
           <div className="mt-4 h-px gold-line" />
           <p className="mt-4 text-xs uppercase tracking-[0.18em] text-accent">{site.credentials}</p>

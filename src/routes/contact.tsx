@@ -6,7 +6,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Sophie Bennett Equine Dentistry" },
-      { name: "description", content: "Get in touch with Sophie Bennett Equine Dentistry — WhatsApp, phone or email. Forest of Dean and surrounding counties." },
+      { name: "description", content: "Get in touch with Sophie Bennett Equine Dentistry — WhatsApp, phone or email. Gloucestershire and surrounding counties." },
       { property: "og:title", content: "Contact Sophie Bennett Equine Dentistry" },
       { property: "og:description", content: "Get in touch by WhatsApp, phone or email." },
     ],
@@ -61,17 +61,17 @@ function Contact() {
           <div className="border-b border-border p-6">
             <p className="text-xs uppercase tracking-[0.22em] text-accent">Based in</p>
             <h2 className="mt-2 font-display text-2xl text-primary md:text-3xl">Hartpury, Gloucestershire</h2>
-            <p className="mt-2 text-sm text-muted-foreground">Covering the Forest of Dean and surrounding counties.</p>
+            <p className="mt-2 text-sm text-muted-foreground">Covering Gloucestershire and surrounding counties.</p>
           </div>
           <iframe
             title="Map of Hartpury, Gloucestershire"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-2.3700%2C51.8850%2C-2.2300%2C51.9650&layer=mapnik&marker=51.9250%2C-2.3000"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-2.3624%2C51.8822%2C-2.2224%2C51.9622&layer=mapnik&marker=51.9222%2C-2.2924"
             className="block h-[420px] w-full border-0"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
           <div className="border-t border-border p-3 text-center text-xs text-muted-foreground">
-            <a href="https://www.openstreetmap.org/?mlat=51.9250&mlon=-2.3000#map=12/51.9250/-2.3000" target="_blank" rel="noreferrer" className="underline hover:text-accent">
+            <a href="https://www.openstreetmap.org/?mlat=51.9222&mlon=-2.2924#map=12/51.9222/-2.2924" target="_blank" rel="noreferrer" className="underline hover:text-accent">
               View larger map
             </a>
           </div>

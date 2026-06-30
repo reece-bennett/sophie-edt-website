@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import dentalWork from "@/assets/dental-work.jpg.asset.json";
+import dentalWork1 from "@/assets/dental-work-1.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -33,7 +33,7 @@ function Services() {
 
           <div className="my-10 h-px gold-line" />
 
-          <img src={dentalWork.url} alt="Equine dental examination in progress" className="w-full rounded-md object-cover shadow-xl" />
+          <img src={dentalWork1} alt="Equine dental examination in progress" className="w-full rounded-md object-cover shadow-xl" />
 
           <p>
             This is because horses' teeth continually erupt throughout their life, leaving behind sharp points and uneven wear which can cause ulceration, pain manifesting in different forms of discomfort, behavioural issues, weight loss, quidding, performance issues, and further dental problems if left untreated.

@@ -1,18 +1,18 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-dentistry.jpg";
-import sophieWithHorse from "@/assets/sophie-with-horse.jpg.asset.json";
 import logo from "@/assets/logo.png";
 import { site, whatsappUrl } from "@/lib/site";
 import { Testimonials } from "@/components/Testimonials";
 import { Check, Heart, ShieldCheck, MapPin, MessageCircle, ArrowRight, Stethoscope, Sparkles, Droplets, FileText, Smile } from "lucide-react";
+import dentalWork2 from "@/assets/dental-work-2.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Sophie Bennett Equine Dentistry — Forest of Dean" },
-      { name: "description", content: "BAEDT & BEVA/BVDA qualified equine dentist. Calm, sympathetic dental care for horses and ponies across the Forest of Dean." },
+      { title: "Sophie Bennett Equine Dentistry" },
+      { name: "description", content: "Equine dentist based in Hartpury, Gloucester. Fully qualified with the BEVA/BVDA and BAEDT." },
       { property: "og:title", content: "Sophie Bennett Equine Dentistry" },
-      { property: "og:description", content: "Calm, qualified equine dental care across the Forest of Dean." },
+      { property: "og:description", content: "Equine dentist based in Hartpury, Gloucester. Fully qualified with the BEVA/BVDA and BAEDT." },
     ],
   }),
   component: Home,
@@ -36,7 +36,7 @@ function Home() {
               Caring professional<br className="hidden sm:block" /> dental care for<br /><em className="text-accent not-italic">your horse.</em>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-primary-foreground/85 sm:text-lg">
-              Fully qualified with the BEVA/BVDA and full member of the British Association of Equine Dental Technicians. Based in Hartpury, in the heart of the Forest of Dean. Dedicated to supporting your horse's welfare, comfort, and performance through calm, compassionate, and professional dental care tailored to each individual horse.
+              Equine dentist based in Hartpury, Gloucester. Fully qualified with the BEVA/BVDA, and a full member of the British Association of Equine Dental Technicians. Dedicated to supporting your horse's welfare, comfort, and performance through calm, compassionate, and professional dental care tailored to each individual horse.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link to="/book" className="group inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-primary transition-all hover:bg-accent/90 hover:shadow-2xl">
@@ -63,7 +63,7 @@ function Home() {
           {[
             { icon: Heart, label: "Calm, sympathetic approach" },
             { icon: ShieldCheck, label: "Fully qualified & insured" },
-            { icon: MapPin, label: "Forest of Dean & beyond" },
+            { icon: MapPin, label: "Gloucestershire & beyond" },
             { icon: Check, label: "BAEDT • BEVA/BVDA" },
           ].map(({ icon: Icon, label }) => (
             <div key={label} className="flex items-center gap-3">
@@ -92,7 +92,7 @@ function Home() {
             {
               icon: Sparkles,
               title: "Floating & rasping",
-              desc: "All sharp enamel points are removed, and any dental overgrowths are reduced appropriately to help create a more balanced mouth. Helping to maximise the efficiency, and comfort when chewing and helping to prevent future problems.",
+              desc: "All sharp enamel points and any dental overgrowths are reduced appropriately to help create a more balanced mouth. Helping to maximise the efficiency, and comfort when chewing and helping to prevent future problems.",
             },
             {
               icon: Droplets,
@@ -128,7 +128,7 @@ function Home() {
       <section className="bg-primary/5">
         <div className="mx-auto max-w-7xl grid gap-16 px-6 py-24 md:grid-cols-2 md:items-center">
           <div className="relative">
-            <img src={sophieWithHorse.url} alt="Sophie examining a horse in the stable" className="aspect-[4/5] w-full rounded-md object-cover shadow-xl" />
+            <img src={dentalWork2} alt="Sophie examining a horse in the stable" className="aspect-[4/5] w-full rounded-md object-cover shadow-xl" />
             <div className="absolute -bottom-6 -right-6 hidden h-36 w-36 rounded-full border-4 border-cream bg-accent md:flex items-center justify-center text-center font-display text-primary px-3 text-sm leading-tight">
               BEVA/BVDA<br />Qualified,<br />BAEDT Registered
             </div>
@@ -139,7 +139,7 @@ function Home() {
               A lifelong passion, a professional calling.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Fully qualified BEVA/BVDA and BAEDT registered, Sophie brings calm, considered dental care to horses and ponies across the Forest of Dean and beyond.
+              Fully qualified BEVA/BVDA and BAEDT registered, Sophie brings calm, considered dental care to horses and ponies across Gloucestershire and beyond.
             </p>
             <Link to="/about" className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-primary underline-offset-4 hover:text-accent hover:underline">
               Read more about Sophie <ArrowRight size={14} />
@@ -157,7 +157,7 @@ function Home() {
           Book your horse's<br /> next dental appointment.
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-muted-foreground">
-          Send a request and Sophie will confirm a time personally, or message directly on WhatsApp — whichever is easiest.
+          Send a request and Sophie will confirm a time personally, or message directly on WhatsApp.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <Link to="/book" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-xl">

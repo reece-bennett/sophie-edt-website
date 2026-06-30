@@ -22,7 +22,7 @@ export function Testimonials() {
     <section className="bg-cream/60 border-y border-border/60">
       <div className="mx-auto max-w-5xl px-6 py-24 text-center">
         <p className="text-xs uppercase tracking-[0.22em] text-accent">Kind words</p>
-        <h2 className="mt-3 font-display text-4xl text-primary md:text-5xl">Client experiences</h2>
+        <h2 className="mt-3 font-display text-4xl text-primary md:text-5xl">Client reviews</h2>
 
         <div className="relative mt-14">
           <Quote
