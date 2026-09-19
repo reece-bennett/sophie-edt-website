@@ -30,7 +30,7 @@ function Terms() {
             <h2 className="font-display text-3xl text-primary md:text-4xl">Cancellations</h2>
             <div className="mt-3 h-px w-16 bg-accent" />
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              We value your business and ask that you respect our business scheduling policies. Please notify us at least 24 hours in advance if you wish to cancel or reschedule your appointment. Any cancellations with less than 24 hours of notice are subject to a cancellation fee of £10.
+              We value your business and ask that you respect our business scheduling policies. Please notify us at least 24 hours in advance if you wish to cancel or reschedule your appointment. Any cancellations with less than 24 hours of notice are subject to a cancellation fee of £20 per horse.
             </p>
           </article>
 
