@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-dentistry.jpg";
+import heroImg from "@/assets/dental-work-3.jpg";
 import logo from "@/assets/logo.png";
 import { site, whatsappUrl } from "@/lib/site";
 import { Testimonials } from "@/components/Testimonials";
 import { Check, Heart, ShieldCheck, MapPin, MessageCircle, ArrowRight, Stethoscope, Sparkles, Droplets, FileText, Smile } from "lucide-react";
-import dentalWork2 from "@/assets/dental-work-2.jpg";
+import dentalWork from "@/assets/dental-work-5.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -128,7 +128,7 @@ function Home() {
       <section className="bg-primary/5">
         <div className="mx-auto max-w-7xl grid gap-16 px-6 py-24 md:grid-cols-2 md:items-center">
           <div className="relative">
-            <img src={dentalWork2} alt="Sophie examining a horse in the stable" className="aspect-[4/5] w-full rounded-md object-cover shadow-xl" />
+            <img src={dentalWork} alt="Sophie examining a horse in the stable" className="aspect-[4/5] w-full rounded-md object-cover shadow-xl" />
             <div className="absolute -bottom-6 -right-6 hidden h-36 w-36 rounded-full border-4 border-cream bg-accent md:flex items-center justify-center text-center font-display text-primary px-3 text-sm leading-tight">
               BEVA/BVDA<br />Qualified,<br />BAEDT Registered
             </div>

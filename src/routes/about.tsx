@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Check } from "lucide-react";
-import sophieHorse from "@/assets/sophie-with-horse.jpg";
+import sophieHorse from "@/assets/sophie-with-horse-2.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
