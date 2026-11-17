@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/dental-work-3.jpg";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.jpg";
 import { site, whatsappUrl } from "@/lib/site";
 import { Testimonials } from "@/components/Testimonials";
 import { Check, Heart, ShieldCheck, MapPin, MessageCircle, ArrowRight, Stethoscope, Sparkles, Droplets, FileText, Smile } from "lucide-react";

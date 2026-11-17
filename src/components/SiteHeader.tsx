@@ -16,9 +16,9 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
-      <div className="relative mx-auto max-w-7xl px-6 py-5 md:py-7">
+      <div className="relative mx-auto max-w-7xl px-6 py-4">
         {/* BAEDT badge — pinned top-left */}
-        <Link
+        {/* <Link
           to="/"
           aria-label="BAEDT member"
           className="absolute left-4 top-4 md:left-6 md:top-6"
@@ -29,20 +29,20 @@ export function SiteHeader() {
             alt="British Association of Equine Dental Technicians (BAEDT) member"
             className="h-12 w-12 rounded-full bg-white object-contain p-1 shadow-sm ring-1 ring-border/60 sm:h-16 sm:w-16 md:h-20 md:w-20"
           />
-        </Link>
+        </Link> */}
 
         <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
           {/* Brand — centred logo + name */}
           <Link
             to="/"
-            className="group flex flex-col items-center gap-4 text-center md:mx-auto md:flex-row md:gap-6 md:text-left"
+            className="group flex flex-row items-center gap-4 text-center md:gap-6 md:text-left"
             onClick={() => setOpen(false)}
           >
-            <img
+            {/* <img
               src={logo}
               alt="Sophie Bennett Equine Dentistry logo"
-              className="h-28 w-28 rounded-full object-cover shadow-md ring-1 ring-border/60 transition-transform group-hover:scale-[1.03] sm:h-32 sm:w-32 md:h-36 md:w-36"
-            />
+              className="h-16 w-16 rounded-full object-cover shadow-md ring-1 ring-border/60 transition-transform group-hover:scale-[1.03] sm:h-24 sm:w-24 md:h-20 md:w-20"
+            /> */}
             <div className="flex flex-col items-center md:items-start">
               <div className="font-display text-2xl leading-tight text-primary sm:text-3xl md:text-4xl">
                 Sophie Bennett
